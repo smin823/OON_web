@@ -3,13 +3,13 @@
     --primary-gold: #D4AF37;
     --primary-gold-light: #F4C430;
     --primary-gold-dark: #AA8C2C;
-    
+
     --bg-dark: #121212;
     --bg-card: #1E1E1E;
-    
+
     --text-main: #FFFFFF;
     --text-muted: #B0B0B0;
-    
+
     /* Spacing */
     --container-padding: 2rem;
     --max-width: 1200px;
@@ -29,7 +29,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, .logo {
+h1,
+h2,
+h3,
+.logo {
     font-family: 'Noto Serif KR', serif;
 }
 
@@ -125,6 +128,7 @@ h1, h2, h3, .logo {
     line-height: 1.2;
     background: linear-gradient(135deg, var(--primary-gold), var(--primary-gold-light), var(--primary-gold));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
     animation: shine 3s linear infinite;
@@ -235,8 +239,110 @@ h1, h2, h3, .logo {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .feature-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Content Page / Privacy Policy */
+.page-container {
+    padding-top: 100px;
+    /* Header height offset */
+    padding-bottom: 4rem;
+    min-height: 80vh;
+}
+
+.content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    color: var(--text-main);
+}
+
+.content-box h1 {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.content-box .date {
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.content-box h2 {
+    font-size: 1.5rem;
+    color: var(--primary-gold-light);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.content-box h3 {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-box p,
+.content-box li {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.content-box ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-box li {
+    margin-bottom: 0.25rem;
+}
+
+.content-box address {
+    font-style: normal;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+.content-box a {
+    color: var(--primary-gold);
+    text-decoration: none;
+}
+
+.content-box .note {
+    font-size: 0.9rem;
+    color: var(--primary-gold-dark);
+}
+
+/* Table Styles */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.content-box table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.content-box th,
+.content-box td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.content-box th {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--primary-gold);
 }
