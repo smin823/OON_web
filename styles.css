@@ -408,11 +408,11 @@ h1, h2, h3, .logo, .footer-logo {
     font-weight: 500;
 }
 
-.chart-labels .top { top: -5%; left: 50%; transform: translateX(-50%); }
-.chart-labels .right { top: 25%; right: -10%; }
-.chart-labels .bottom-right { bottom: 10%; right: 5%; }
-.chart-labels .bottom-left { bottom: 10%; left: 5%; }
-.chart-labels .left { top: 25%; left: -10%; }
+.chart-labels .top { top: -8%; left: 50%; transform: translateX(-50%); }
+.chart-labels .right { top: 22%; right: -15%; }
+.chart-labels .bottom-right { bottom: 5%; right: 0%; }
+.chart-labels .bottom-left { bottom: 5%; left: 0%; }
+.chart-labels .left { top: 22%; left: -15%; }
 
 .analysis-chart h3 {
     font-size: 1.25rem;

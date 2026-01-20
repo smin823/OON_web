@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="index.html" class="logo"><img src="logo.png" alt="OON" class="logo-icon">OON</a>
+            <a href="index.html" class="logo"><img src="logo-header.png" alt="OON" class="logo-icon">OON</a>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#services">Services</a></li>
@@ -221,10 +221,26 @@
                 <div class="analysis-chart">
                     <div class="chart-container">
                         <svg viewBox="0 0 200 200" class="radar-chart">
-                            <polygon points="100,20 170,70 150,150 50,150 30,70" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="1"/>
-                            <polygon points="100,40 150,75 135,135 65,135 50,75" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-                            <polygon points="100,60 130,80 120,120 80,120 70,80" fill="none" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
-                            <polygon points="100,30 155,68 140,140 60,140 45,68" fill="rgba(212,175,55,0.2)" stroke="#D4AF37" stroke-width="2"/>
+                            <!-- 100% outer boundary -->
+                            <polygon points="100,20 176,75 147,165 53,165 24,75" fill="none" stroke="rgba(212,175,55,0.3)" stroke-width="1"/>
+                            <!-- 75% line -->
+                            <polygon points="100,40 157,81 135,149 65,149 43,81" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+                            <!-- 50% line -->
+                            <polygon points="100,60 138,88 124,132 76,132 62,88" fill="none" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+                            <!-- Data: Study 90%, Overall 80%, Wealth 70%, Love 85%, Health 65% -->
+                            <polygon points="100,28 161,80 133,145 60,155 51,84" fill="rgba(212,175,55,0.2)" stroke="#D4AF37" stroke-width="2"/>
+                            <!-- Axis lines -->
+                            <line x1="100" y1="100" x2="100" y2="20" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+                            <line x1="100" y1="100" x2="176" y2="75" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+                            <line x1="100" y1="100" x2="147" y2="165" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+                            <line x1="100" y1="100" x2="53" y2="165" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+                            <line x1="100" y1="100" x2="24" y2="75" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+                            <!-- Data points -->
+                            <circle cx="100" cy="28" r="4" fill="#D4AF37"/>
+                            <circle cx="161" cy="80" r="4" fill="#D4AF37"/>
+                            <circle cx="133" cy="145" r="4" fill="#D4AF37"/>
+                            <circle cx="60" cy="155" r="4" fill="#D4AF37"/>
+                            <circle cx="51" cy="84" r="4" fill="#D4AF37"/>
                         </svg>
                         <div class="chart-labels">
                             <span class="label top">Study<br><small>90 pts</small></span>
