@@ -1,0 +1,6 @@
+# robots.txt for OON
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://oon.plolabs.com/sitemap.xml
