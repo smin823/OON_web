@@ -64,6 +64,21 @@ h1, h2, h3, .logo, .footer-logo {
     font-weight: 600;
     color: var(--primary-gold);
     letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
 }
 
 .nav-links {
@@ -119,10 +134,11 @@ h1, h2, h3, .logo, .footer-logo {
 
 .hero-icon {
     margin-bottom: 2rem;
-    opacity: 0.9;
 }
 
-.hero-icon svg {
+.hero-icon-img {
+    width: 120px;
+    height: 120px;
     animation: float 4s ease-in-out infinite;
 }
 
