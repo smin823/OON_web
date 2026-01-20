@@ -67,12 +67,12 @@ h1, h2, h3, .logo, .footer-logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
+    transition: opacity 0.3s;
 }
 
-.logo a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logo-icon {
